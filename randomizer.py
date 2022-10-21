@@ -51,9 +51,8 @@ def sierra_retro_randomizer():
 }
 
   already_picked = penguin_reader()
-  print(already_picked)
   
-  penguin = random.randint(1, 46)
+  penguin = random.randint(1, 42)
   if penguin_picker[penguin] not in already_picked:
     already_picked += penguin_picker[penguin]
     penguin_writer(penguin_picker[penguin])
